@@ -16,7 +16,9 @@ angular.
               templateUrl: 'App/Partials/Home.html'
           }).
           when('/pagina1', {
-              templateUrl: 'App/Partials/Pagina1.html'
+              templateUrl: 'App/Partials/Pagina1.html',
+              controller: "Pagina1Controller",
+              constrollerAs: 'Pag1'
           }).
           when('/pagina2', {
               templateUrl: 'App/Partials/Pagina2.html'

@@ -21,7 +21,11 @@
     <!-- Angular Scripts -->
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.js"></script>
-    <script src="App/Javascript/App.js"></script>    
+
+    <!-- Angular Custom Scripts -->
+    <script src="App/Javascript/App.js"></script>
+    <script src="App/Javascript/Controllers/Pagina1Controller.js"></script>
+        
      <!-- Bootstrap core CSS -->
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     
@@ -47,28 +51,6 @@
 <body>
 
     <div ng-view></div>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/">Auto's</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#/">Home</a></li>
-                    <li><a href="#/pagina1">Pagina 1</a></li>
-                    <li><a href="#/pagina2">Pagina 2</a></li>
-                    <li><a href="#/pagina3">Pagina 3</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
