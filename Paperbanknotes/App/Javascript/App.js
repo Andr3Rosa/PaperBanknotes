@@ -1,7 +1,8 @@
 ﻿angular
-    .module('AutoApp', [
-        'ngAnimate',
+    .module('AutoApp', [        
         'ngRoute',
         
     ]);
+
+
 
