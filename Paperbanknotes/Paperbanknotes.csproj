@@ -104,6 +104,7 @@
     <Content Include="App\Css\Pagina3.css" />
     <Content Include="App\Javascript\App.js" />
     <Content Include="App\Javascript\Configs\routeProvider.js" />
+    <Content Include="App\Partials\Home.html" />
     <Content Include="App\Partials\Pagina1.html" />
     <Content Include="App\Partials\Pagina2.html" />
     <Content Include="App\Partials\Pagina3.html" />
