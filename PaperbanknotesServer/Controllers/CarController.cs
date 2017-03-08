@@ -16,7 +16,7 @@ namespace PaperbanknotesServer.Controllers
         {
             CarItems = carItems;
         }
-        
+
         // GET api/car
         [HttpGet]
         public IEnumerable<Car> GetAll()
@@ -26,7 +26,7 @@ namespace PaperbanknotesServer.Controllers
 
         // GET api/car/5
         [HttpGet("{id}")]
-        public IActionResult Get(long id)
+        public IActionResult GetById(long id)
         {
             var item = CarItems.Find(id);
             if (item == null)
@@ -36,22 +36,57 @@ namespace PaperbanknotesServer.Controllers
             return new ObjectResult(item);
         }
 
-        //// POST api/car
-        //[HttpPost]
-        //public void Post([FromBody]string value)
-        //{
-        //}
+        // POST api/car
+        [HttpPost]
+        public IActionResult Create([FromBody] Car car)
+        {
+            if (car == null)
+            {
+                return BadRequest();
+            }
 
-        //// PUT api/car/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
+            CarItems.Add(car);
 
-        //// DELETE api/car/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+            //(overgenomen van de tutorial)
+            return CreatedAtRoute("GetCar", new { id = car.Key, car }, car);
+        }
+
+        // PUT api/car/5
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] Car car)
+        {
+            if (car == null || car.Key != id)
+            {
+                return BadRequest();
+            }
+
+            var foundCar = CarItems.Find(id);
+            if (foundCar == null)
+            {
+                return NotFound();
+            }
+
+            foundCar.Brand = car.Brand;
+            foundCar.Model = car.Model;
+            foundCar.Buildyear = car.Buildyear;
+            foundCar.Price = car.Price;
+
+            CarItems.Update(foundCar);
+            return new NoContentResult();
+        }
+
+        // DELETE api/car/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            var car = CarItems.Find(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            CarItems.Remove(id);
+            return new NoContentResult();
+        }
     }
 }
