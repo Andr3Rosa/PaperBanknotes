@@ -946,8 +946,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Api\Controllers\" />
-    <Folder Include="App\Api\Serialiseerbaar\" />
     <Folder Include="App\Javascript\Controllers\" />
     <Folder Include="App\Javascript\Directives\" />
     <Folder Include="App\Javascript\Legacy\" />
