@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using PaperbanknotesServer.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace PaperbanknotesServer
 {
@@ -27,6 +29,10 @@ namespace PaperbanknotesServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // requires using Microsoft.EntityFrameworkCore;
+            services.AddDbContext<CarDatabaseContext>(opt => opt.UseInMemoryDatabase());
+
+            services.AddSingleton<ICarRepository, CarRepository>();
             // Add framework services.
             services.AddMvc();
         }
