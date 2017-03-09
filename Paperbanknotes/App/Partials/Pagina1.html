@@ -25,15 +25,15 @@
 
 <div class="container">
     <div ngcontroller="Pagina1Controller" class="aanbod">
-        <div ng-repeat="auto in autos">
+        <div ng-repeat="car in cars">
             <div class="auto">
-                <h2 class="name">{{auto.naam}}</h2>
+                <h2 class="name">{{car.naam}}</h2>
                 <div class="details">
-                    <p class="auto_details">Merk: {{auto.merk}}</p>
-                    <p class="auto_details">Bouwjaar: {{auto.bouwjaar}}</p>
-                    <p class="auto_details">Aantal deuren: {{auto.aantal_deuren}}</p>
-                    <p class="auto_details">Originele waarde: {{auto.originele_waarde}}</p>
-                    <p class="auto_details">Te koop voor: {{auto.price}}</p>
+                    <p class="auto_details">Merk: {{car.merk}}</p>
+                    <p class="auto_details">Bouwjaar: {{car.bouwjaar}}</p>
+                    <p class="auto_details">Aantal deuren: {{car.aantal_deuren}}</p>
+                    <p class="auto_details">Originele waarde: {{car.originele_waarde}}</p>
+                    <p class="auto_details">Te koop voor: {{car.prijs}}</p>
                 </div>
                 <div class="auto_options">
                     <button class="saveButton" ng-click="edit()">Wijzig auto</button>

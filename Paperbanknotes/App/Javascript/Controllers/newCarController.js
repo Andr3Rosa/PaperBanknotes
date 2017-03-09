@@ -2,6 +2,6 @@
 
 autoApp.controller('newCarController', ['$scope', function ($scope) {
     $scope.save = function () {
-        var auto = $scope.auto
-    }
+        var auto = $scope.auto;
+    };
 }]);

@@ -11,10 +11,12 @@ namespace PaperbanknotesServer.model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Key { get; set; }
-        public string Brand { get; set; }
-        public string Model { get; set; }
-        public int Buildyear { get; set; }
-        public double Price { get; set; }
+        public long id { get; set; }
+        public string naam { get; set; }
+        public string merk { get; set; }
+        public int bouwjaar { get; set; }
+        public int aantal_deuren { get; set; }
+        public int originele_waarde { get; set; }
+        public int prijs { get; set; }
     }
 }

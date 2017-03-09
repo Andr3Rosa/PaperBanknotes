@@ -48,14 +48,14 @@ namespace PaperbanknotesServer.Controllers
             CarItems.Add(car);
 
             //(overgenomen van de tutorial)
-            return CreatedAtRoute("GetCar", new { id = car.Key, car }, car);
+            return CreatedAtRoute("GetCar", new { id = car.id, car }, car);
         }
 
         // PUT api/car/5
         [HttpPut("{id}")]
         public IActionResult Update(long id, [FromBody] Car car)
         {
-            if (car == null || car.Key != id)
+            if (car == null || car.id != id)
             {
                 return BadRequest();
             }
@@ -66,10 +66,12 @@ namespace PaperbanknotesServer.Controllers
                 return NotFound();
             }
 
-            foundCar.Brand = car.Brand;
-            foundCar.Model = car.Model;
-            foundCar.Buildyear = car.Buildyear;
-            foundCar.Price = car.Price;
+            foundCar.naam = car.naam;
+            foundCar.merk= car.merk;
+            foundCar.bouwjaar= car.bouwjaar;
+            foundCar.aantal_deuren = car.aantal_deuren;
+            foundCar.originele_waarde = car.originele_waarde;
+            foundCar.prijs = car.prijs;
 
             CarItems.Update(foundCar);
             return new NoContentResult();
