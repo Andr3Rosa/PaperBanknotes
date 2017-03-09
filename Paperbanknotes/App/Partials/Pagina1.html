@@ -28,8 +28,17 @@
         <div ng-repeat="auto in autos">
             <div class="auto">
                 <h2 class="name">{{auto.naam}}</h2>
-                <p class="auto_details">Merk: {{auto.merk}}</p>
-                <p class="auto_details">Bouwjaar: {{auto.bouwjaar}}</p>
+                <div class="details">
+                    <p class="auto_details">Merk: {{auto.merk}}</p>
+                    <p class="auto_details">Bouwjaar: {{auto.bouwjaar}}</p>
+                    <p class="auto_details">Aantal deuren: {{auto.aantal_deuren}}</p>
+                    <p class="auto_details">Originele waarde: {{auto.originele_waarde}}</p>
+                    <p class="auto_details">Te koop voor: {{auto.price}}</p>
+                </div>
+                <div class="auto_options">
+                    <button class="saveButton" ng-click="edit()">Wijzig auto</button>
+                    <button class="saveButton" ng-click="buy()">Koop auto</button>
+                </div>
             </div>
         </div>
     </div>

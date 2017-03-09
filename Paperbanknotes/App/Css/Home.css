@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+.container {
+    width: 1800px;
+}
+
 .starter-template {
     padding: 40px 15px;
     text-align: center;
@@ -20,7 +24,7 @@ body {
   padding: 40px 15px;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -29,8 +33,8 @@ body {
     flex-direction: column;
     border: 1px solid black;
     border-radius: 8px;
-    width: 165px;
-    height: 180px;
+    width: 80%;
+    height: 239px;
     margin-left: 40px;
     margin-top: 30px;
     text-align: left;
@@ -122,4 +126,16 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+}
+
+.details {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 116px;
+    display: flex;
+    margin-left: 5%;
+}
+
+.auto_options {
+
 }
