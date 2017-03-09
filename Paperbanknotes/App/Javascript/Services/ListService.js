@@ -1,3 +1,3 @@
-﻿var autoApp = angular.module('AutoApp');
+﻿var autoApp = angular.module('AutoApp', ['ngResource']);
 
-autoApp.value("autoLijst", []);
+autoApp.value('$autoList', { value: [] });

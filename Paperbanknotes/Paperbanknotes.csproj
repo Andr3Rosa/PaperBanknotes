@@ -102,11 +102,15 @@
     <Content Include="App\Css\Pagina2.css" />
     <Content Include="App\Css\Pagina1.css" />
     <Content Include="App\Css\Pagina3.css" />
+    <Content Include="App\Img\audi_betrouwbaar.jpg" />
+    <Content Include="App\Img\bmw_home.jpg" />
     <Content Include="App\Img\home_bmw.png" />
+    <Content Include="App\Img\mercedes_service.jpg" />
     <Content Include="App\Javascript\App.js" />
     <Content Include="App\Javascript\Configs\routeProvider.js" />
     <Content Include="App\Javascript\Controllers\newCarController.js" />
     <Content Include="App\Javascript\Controllers\Pagina1Controller.js" />
+    <Content Include="App\Javascript\Services\autoListService.js" />
     <Content Include="App\Partials\Home.html" />
     <Content Include="App\Partials\Pagina1.html" />
     <Content Include="App\Partials\Pagina2.html" />
@@ -952,7 +956,6 @@
   <ItemGroup>
     <Folder Include="App\Javascript\Directives\" />
     <Folder Include="App\Javascript\Legacy\" />
-    <Folder Include="App\Javascript\Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
