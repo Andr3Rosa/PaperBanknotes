@@ -12,10 +12,24 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="#/">Home</a></li>
-                <li><a href="#/pagina1">Pagina 1</a></li>
-                <li class="active"><a href="#/pagina2">Pagina 2</a></li>
-                <li><a href="#/pagina3">Pagina 3</a></li>
+                <li><a href="#/pagina1">Aanbod</a></li>
+                <li class="active"><a href="#/pagina2">Aanbieden</a></li>
+                <li><a href="#/pagina3">Overig</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+
+<h2 class="title">Zet je auto te koop</h2>
+<div ng-controller="newCarController">
+    <form class="teKoopForm">
+        <strong class="formLabel">Merk</strong>
+        <input class="textfield" type="text" ng-model="auto.merk" />
+        <strong class="formLabel">Type</strong>
+        <input class="textfield" type="text" ng-model="auto.type" />
+        <strong class="formLabel">Bouwjaar</strong>
+        <input class="textfield" type="text" ng-model="auto.bouwjaar" />
+        <button class="saveButton" ng-click="save()">Zet te koop</button>
+    </form>
+</div>
+

@@ -21,7 +21,8 @@ angular.
               constrollerAs: 'Pag1'
           }).
           when('/pagina2', {
-              templateUrl: 'App/Partials/Pagina2.html'
+              templateUrl: 'App/Partials/Pagina2.html',
+              controller: "newCarController"
           }).
           when('/pagina3', {
               templateUrl: 'App/Partials/Pagina3.html'
