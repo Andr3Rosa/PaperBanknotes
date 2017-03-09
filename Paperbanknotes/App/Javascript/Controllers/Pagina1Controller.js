@@ -7,13 +7,14 @@ autoApp.controller('Pagina1Controller', ['$scope', '$http', function ($scope, $h
         $scope.cars = response.data;
     }, function (response) {
         // mislukt
-
     });
 
-    //$http.post
-
-    //$http.put
-
-    //$http.delete
-
-}]); 
+    $scope.removeCar = function (car) {
+        console.warn("Car = " + car);
+        $http.delete("/api/car", car).then(function (response) {
+            // success
+        }, function (response) {
+            // error
+        });
+    };
+}]);
