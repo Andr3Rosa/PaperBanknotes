@@ -47,7 +47,6 @@ namespace PaperbanknotesServer.Controllers
 
             CarItems.Add(car);
 
-            //(overgenomen van de tutorial)
             return CreatedAtRoute("GetCar", new { id = car.id, car }, car);
         }
 
