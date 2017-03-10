@@ -88,6 +88,7 @@ namespace PaperbanknotesServer.Controllers
             }
 
             CarItems.Remove(id);
+
             return new NoContentResult();
         }
     }

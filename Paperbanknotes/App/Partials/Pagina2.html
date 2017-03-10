@@ -23,13 +23,18 @@
 <h2 class="title">Zet je auto te koop</h2>
 <div ng-controller="newCarController">
     <form class="teKoopForm">
-        <strong class="formLabel">Merk</strong>
+        <strong class="formLabel">Merk is</strong>
         <input class="textfield" type="text" ng-model="auto.merk" />
-        <strong class="formLabel">Type</strong>
-        <input class="textfield" type="text" ng-model="auto.type" />
+        <strong class="formLabel">Antal deuren</strong>
+        <input class="textfield" type="text" ng-model="auto.aantal_deuren" />
         <strong class="formLabel">Bouwjaar</strong>
         <input class="textfield" type="text" ng-model="auto.bouwjaar" />
-        <button class="saveButton" ng-click="save()">Zet te koop</button>
+        <strong class="formLabel">Originele waarde</strong>
+        <input class="textfield" type="text" ng-model="auto.originele_waarde" />
+        <strong class="formLabel">Te koop voor</strong>
+        <input class="textfield" type="text" ng-model="auto.prijs" />
+        <button class="saveButton" ng-click="save(auto)">Zet te koop</button>
     </form>
+    <p>{{welkomsbericht.me}}</p>
 </div>
 

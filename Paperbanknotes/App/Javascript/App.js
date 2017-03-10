@@ -27,6 +27,7 @@ angular.
           when('/pagina3', {
               templateUrl: 'App/Partials/Pagina3.html'
           }).
+              
           otherwise('/');
     }
   ]);
