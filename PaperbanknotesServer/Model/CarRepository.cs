@@ -13,7 +13,7 @@ namespace PaperbanknotesServer.Database
         public CarRepository(CarDatabaseContext context)
         {
             carcontext = context;
-            Add(new Car { naam = "S model", merk = "Tesla", bouwjaar = 2014, aantal_deuren = 5, originele_waarde = 81100, prijs = 90000});
+            Add(new Car { naam = "S model", merk = "Tesla", bouwjaar = 2014, aantal_deuren = 5, originele_waarde = 81100, prijs = 90000 });
             Add(new Car { naam = "Punto", merk = "Fiat", bouwjaar = 1980, aantal_deuren = 3, originele_waarde = 1100, prijs = 900000 });
         }
 
