@@ -27,7 +27,7 @@ angular.
           when('/pagina3', {
               templateUrl: 'App/Partials/Pagina3.html'
           }).
-          when('/wijzig', {
+          when('/wijzig/:id', {
               templateUrl: 'App/Partials/Wijzig.html',
               controller: "updateCarController"
           }).

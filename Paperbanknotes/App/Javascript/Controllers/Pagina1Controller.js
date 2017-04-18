@@ -1,6 +1,6 @@
 ﻿var autoApp = angular.module('AutoApp')
 
-autoApp.controller('Pagina1Controller', ['$scope', '$http', function ($scope, $http) {
+autoApp.controller('Pagina1Controller', ['$scope', '$http', '$location', function ($scope, $http, $location) {
     $scope.cars = [];
     $http.get("/api/car").then(function (response) {
         // gelukt
@@ -27,7 +27,6 @@ autoApp.controller('Pagina1Controller', ['$scope', '$http', function ($scope, $h
     };
 
     $scope.edit = function (car) {
-        var temp = car;
-        
+        $location.path('/wijzig/' + car.id);
     }
 }]);
