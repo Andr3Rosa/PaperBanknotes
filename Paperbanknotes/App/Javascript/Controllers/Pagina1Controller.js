@@ -25,4 +25,9 @@ autoApp.controller('Pagina1Controller', ['$scope', '$http', function ($scope, $h
             // error
         });
     };
+
+    $scope.edit = function (car) {
+        var temp = car;
+        
+    }
 }]);

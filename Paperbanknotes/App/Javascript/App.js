@@ -27,7 +27,11 @@ angular.
           when('/pagina3', {
               templateUrl: 'App/Partials/Pagina3.html'
           }).
-              
+          when('/wijzig', {
+              templateUrl: 'App/Partials/Wijzig.html',
+              controller: "updateCarController"
+          }).
+
           otherwise('/');
     }
   ]);

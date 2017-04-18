@@ -1,0 +1,41 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">AutoTrader HHS</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/pagina1">Aanbod</a></li>
+                <li><a href="#/pagina2">Aanbieden</a></li>
+                <li><a href="#/pagina3">Overig</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<h2 class="title">Wijzig de aanbieding</h2>
+<div ng-controller="updateCarController">
+    <form class="teKoopForm">
+        <strong class="formLabel">Naam</strong>
+        <input class="textfield" type="text" ng-model="auto.naam" />
+        <strong class="formLabel">Merk is</strong>
+        <input class="textfield" type="text" ng-model="auto.merk" />
+        <strong class="formLabel">Antal deuren</strong>
+        <input class="textfield" type="text" ng-model="auto.aantal_deuren" />
+        <strong class="formLabel">Bouwjaar</strong>
+        <input class="textfield" type="text" ng-model="auto.bouwjaar" />
+        <strong class="formLabel">Originele waarde</strong>
+        <input class="textfield" type="text" ng-model="auto.originele_waarde" />
+        <strong class="formLabel">Te koop voor</strong>
+        <input class="textfield" type="text" ng-model="auto.prijs" />
+        <button class="saveButton" ng-click="update(auto)">Zet te koop</button>
+    </form>
+</div>
+
