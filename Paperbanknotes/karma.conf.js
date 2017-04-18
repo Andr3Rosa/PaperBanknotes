@@ -15,10 +15,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-	'./scripts/angular.js',
-	'./scripts/angular-mocks.js',
-	'./App/Javascript/Controllers/newCarController.spec.js',
-	'./App/Javascript/Controllers/updateCarController.spec.js'
+    './scripts/angular/angular.js',
+    './scripts/angular-route/angular-route.js',
+    './scripts/angular-resource/angular-resource.js',
+    './scripts/angular-animate/angular-animate.js',
+    './scripts/angular-mocks/angular-mocks.js',
+    './app/Javascript/**/**/*.js'
     ],
 
 
