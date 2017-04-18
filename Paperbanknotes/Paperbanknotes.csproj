@@ -102,6 +102,8 @@
     <Content Include="App\Css\Pagina2.css" />
     <Content Include="App\Css\Pagina1.css" />
     <Content Include="App\Css\Pagina3.css" />
+    <Content Include="App\E2E\conf.js" />
+    <Content Include="App\E2E\pages-spec.js" />
     <Content Include="App\Img\audi_betrouwbaar.jpg" />
     <Content Include="App\Img\bmw_home.jpg" />
     <Content Include="App\Img\home_bmw.png" />
