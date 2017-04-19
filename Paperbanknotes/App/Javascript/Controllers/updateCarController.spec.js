@@ -6,19 +6,9 @@
 
         httpBackend = $httpBackend
 
-        // Get hold of a scope (i.e. the root scope)
         rootScope = $rootScope
-        // The $controller service is used to create instances of controllers
         controller = $controller
-        // $location = $injector.get('$location');
-        //$http = $injector.get('$http');
         scope = rootScope.$new();
-
-        //$httpBackend
-        // .when("GET")
-        // .respond(200, { id: 1, naam: "S model", merk: "Tesla",bouwjaar: 2014, aantal_deuren:5, originele_waarde: 81100, prijs:90000});
-        //$httpBackend
-        // .expect("GET", "http://localhost/api/car/1");
 
     }));
 
