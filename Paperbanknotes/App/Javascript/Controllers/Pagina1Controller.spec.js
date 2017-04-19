@@ -19,10 +19,9 @@
 
 
     it("get all cars", inject(function ($http) {
-        httpBackend.expectGET("App/Partials/Home.html").respond("shizzle");
         httpBackend.expectGET("/api/car").respond("auto");
+        httpBackend.expectGET("App/Partials/Home.html").respond("nvt");
         
-
         var scope = rootScope.$new();
         ctrl = controller('Pagina1Controller', { $scope: scope });
 

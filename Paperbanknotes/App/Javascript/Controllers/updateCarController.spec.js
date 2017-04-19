@@ -31,7 +31,7 @@
 
     it("get chosen car id", inject(function ($http) {
         httpBackend.expectGET("/api/car/1").respond("id: 1, naam: auto");
-        httpBackend.expectGET("App/Partials/Home.html").respond("shizzle");
+        httpBackend.expectGET("App/Partials/Home.html").respond("nvt");
         var scope = rootScope.$new();
         ctrl = controller('updateCarController', { $scope: scope, $routeParams: {id: 1} });
 

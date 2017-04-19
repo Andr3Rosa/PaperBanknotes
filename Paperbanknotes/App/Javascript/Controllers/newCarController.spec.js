@@ -8,10 +8,7 @@
 
         // Get hold of a scope (i.e. the root scope)
         rootScope = $rootScope
-        // The $controller service is used to create instances of controllers
         controller = $controller
-        // $location = $injector.get('$location');
-        //$http = $injector.get('$http');
         scope = rootScope.$new();
 
     }));
@@ -24,13 +21,16 @@
 
 
     it("test carController", inject(function ($http) {
-        httpBackend.expectGET("/api/car", "auto").respond(true);
+        httpBackend.expectPOST("/api/car", "auto").respond(true);
+        httpBackend.expectGET("App/Partials/Home.html").respond("nvt");
+        httpBackend.expectGET("App/Partials/Pagina1.html").respond("nvt");
 
         var scope = rootScope.$new();
         ctrl = controller('newCarController', { $scope: scope, $routeParams: { id: 1 } });
+        scope.save("auto")
 
         httpBackend.flush();
-        expect(scope.auto).toBe("id: 1, naam: auto");
+        expect(httpBackend.post).toHaveBeenCalled();
     }));
 });
         
