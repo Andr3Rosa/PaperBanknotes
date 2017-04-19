@@ -16,6 +16,13 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
     './scripts/angular/angular.js',
+<<<<<<< HEAD
+	'./scripts/angular-mocks.js',
+    './scripts/angular-route/angular-route.js',
+    './scripts/angular-resource/angular-resource.js',
+    './scripts/angular-animate/angular-animate.js',    
+    './app/Javascript/**/**/*.js'
+=======
     './scripts/angular-mocks.js',
     './scripts/angular-route.js',
     './scripts/angular-resource.js',
@@ -28,6 +35,7 @@ module.exports = function(config) {
     './app/Javascript/Controllers/updateCarController.spec.js',
     './app/Javascript/Controllers/newCarController.spec.js',
     './app/Javascript/Controllers/Pagina1Controller.spec.js',
+>>>>>>> origin/master
     ],
 
 
