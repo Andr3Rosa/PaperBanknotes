@@ -9,6 +9,10 @@ autoApp.controller('Pagina1Controller', ['$scope', '$http', '$location', functio
         // mislukt
     })
 
+    $scope.isActive = function (route) {
+        return route === $location.path();
+    };
+
     $scope.removeCar = function (car) {
         var temporary = car;
         
