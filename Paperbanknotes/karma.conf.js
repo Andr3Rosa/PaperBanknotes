@@ -16,16 +16,24 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
     './scripts/angular/angular.js',
-    './scripts/angular-route/angular-route.js',
-    './scripts/angular-resource/angular-resource.js',
-    './scripts/angular-animate/angular-animate.js',
-    './scripts/angular-mocks/angular-mocks.js',
-    './app/Javascript/**/**/*.js'
+    './scripts/angular-mocks.js',
+    './scripts/angular-route.js',
+    './scripts/angular-resource.js',
+    './scripts/.js',
+    './app/Javascript/App.js',
+    './app/Javascript/Services/autoListService.js',
+    './app/Javascript/Controllers/updateCarController.js',
+    './app/Javascript/Controllers/newCarController.js',
+    './app/Javascript/Controllers/Pagina1Controller.js',
+    './app/Javascript/Controllers/updateCarController.spec.js',
+    './app/Javascript/Controllers/newCarController.spec.js',
+    './app/Javascript/Controllers/Pagina1Controller.spec.js',
     ],
 
 
     // list of files to exclude
     exclude: [
+
     ],
 
 
